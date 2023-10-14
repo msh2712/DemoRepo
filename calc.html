@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+
+    <script>
+        function math() {
+
+            var one = parseInt(document.getElementById("fir1").value);
+            var two = parseInt(document.getElementById("sec2").value);
+            var open = (document.getElementById("open").value);
+
+
+            if (open == '+') {
+                var que = (one) + (two);
+            }
+            if (open == '-') {
+                var que = (one) - (two);
+            }
+            if (open == '*') {
+                var que = (one) * (two);
+            }
+            if (open == '/') {
+                var que = (one) / (two);
+            }
+            document.getElementById("res").value = que;
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="fir1" step="any">
+    <select name="first" id="open">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="sec2" step="any">
+    <button onclick="math()">click</button>
+    <input type="text" id="res">
+    <!-- <div id="res"></div> -->
+
+</body>
+
+</html>

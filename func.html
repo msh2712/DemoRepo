@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+
+ <script>
+  
+
+ function max()
+   
+    {
+        let a=parseInt(document.getElementById("text1").value);
+        let b= parseInt(document.getElementById("text2").value);
+        let c= parseInt(document.getElementById("text3").value);
+
+    // if(a>b)
+    //     if(a>c)
+    //     {
+    //     document.getElementById("max1").innerHTML=a;
+    //     }
+
+    //     else
+    //     {
+    //     document.getElementById("max1").innerHTML=c;
+    //     }
+    // else 
+    //     if(b>c)
+    //     {
+    //     document.getElementById("max1").innerHTML=b;
+    //     }
+        
+    //     {
+    //     document.getElementById("max1").innerHTML=c;
+    //     }
+
+              
+        if((a > b) && (a > c))
+        {
+            document.getElementById("max1").innerHTML=a;
+        }
+        else if (b > c) {
+            document.getElementById("max1").innerHTML=b;
+        }
+        else if (c > b){
+            document.getElementById("max1").innerHTML= c;
+        }
+        else{
+            document.getElementById("max1").innerHTML= " ALL OF MAX ";
+
+        }
+
+        // while tey aewnot possible so try to addany 
+        
+        
+
+    }
+
+   
+        
+    </script>
+
+</head>
+<body>
+
+    <input type="number" id="text1">
+    <input type="number" id="text2">
+    <input type="number" id="text3">
+    <button onclick="max()">CLICK</button>
+
+    <div id="max1"></div>
+
+  
+    
+</body>
+</html>

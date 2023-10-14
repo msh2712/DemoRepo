@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function star()
+        {
+
+            var a = parseInt(document.getElementById("text1").value);
+            var b = parseInt(document.getElementById("text2").value);
+            // console.log(a+b);
+        //    a = parseInt(a)
+        //    b = parseInt(b)
+          
+           document.getElementById("one").innerHTML =a+b;
+
+            } 
+           
+
+    function star2()
+            
+          { 
+            var c =parseInt(document.getElementById("text3").value);
+            var d = parseInt(document.getElementById("text4").value);
+           
+            document.getElementById("two").innerHTML =c*d;
+
+        }
+    </script>
+</head>
+<body>
+
+
+   <label for="text1">a+a= </label><input type="number" name="" id="text1">
+   
+    <input type="number" name="" id="text2">
+  
+    <button onclick="star()">CLICK</button>
+    
+   <br>
+   <br>
+
+   <label for="text3">a*a= </label><input type="number" name="one" id="text3">
+    <input type="number" name="one" id="text4">
+
+    <button onclick="star2()">CLICK</button>
+    
+
+
+    <div id="one"></div>
+    <div id="two"></div>
+</body>
+</html>

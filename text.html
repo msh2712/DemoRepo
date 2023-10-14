@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+
+    <script>
+
+        // ARRAY METHOD
+
+        // 1.array.length (check length of an array)
+        // 2.array.pop  ( remove last Object of array)
+        // 3.array.tostring() ( convert array to String)
+        // 4.array.push  ( add object in array . to arrays last object )
+        // 5.array.shift  ( remove frome first(only) Object of array)
+        // 6.array.unshift  ( add object in array . to arrays first object ).
+        // 7.delete.array[0]  ( delete value array of given index )
+        // 8.v1.concat(v2,v3)  ( merge two array store value in one array)
+        // 9.flat. ( same of concat)
+        // 10.splice (remove oblject frome we give command ex.3 this remove 0 to 3 object)
+        // 11.short ( give index pojution of array by alfabetically)
+        // 12.reverse ( reverse alfabetically)
+
+
+
+        var array =[]
+
+        function hii() {
+
+            let a = document.getElementById("fir").value;
+            array.push(a);
+            document.getElementById("one").innerHTML = array;
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="fir">
+    <button onclick="hii()"><b>click</b></button>
+    <div id="one"></div>
+
+
+
+
+
+</body>
+
+</html>

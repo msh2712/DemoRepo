@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oprater</title>
+
+    <script>
+
+        function one() {
+
+            a = parseInt(document.getElementById("first").value);
+            b = parseInt(document.getElementById("sec").value);
+
+            var c = (a + b);
+
+            document.getElementById("click").innerHTML = c;
+
+        }
+
+        function sec() {
+
+            a = parseInt(document.getElementById("first").value);
+            b = parseInt(document.getElementById("sec").value);
+
+            var d = (a - b);
+
+
+
+            document.getElementById("click").innerHTML = d;
+
+        }
+
+        function third() {
+
+            a = parseInt(document.getElementById("first").value);
+            b = parseInt(document.getElementById("sec").value);
+
+            var e = (a * b);
+
+
+            document.getElementById("click").innerHTML = e;
+
+        }
+
+        function four() {
+
+            a = parseInt(document.getElementById("first").value);
+            b = parseInt(document.getElementById("sec").value);
+
+            var f = (a / b);
+
+
+
+            document.getElementById("click").innerHTML = f;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="first">
+    <input type="text" id="sec">
+    <br>
+    <br>
+    <hr>
+    <button onclick="one()"><b>click</b></button>
+    <button onclick="sec()"><i>click</i></button>
+    <button onclick="third()"><i>click</i></button>
+    <button onclick="four()"><b>click</b></button>
+    <hr>
+    <div id="click"></div>
+
+</body>
+
+</html>
